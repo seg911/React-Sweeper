@@ -15,14 +15,14 @@ pipeline {
       }
     }
 
-    stage('Test') {
-      environment {
-        CI = 'true'
-      }
-      steps {
-        sh './jenkins/scripts/test.sh'
-      }
-    }
+//    stage('Test') {
+//      environment {
+//        CI = 'true'
+//      }
+//      steps {
+//        sh './jenkins/scripts/test.sh'
+//      }
+//    }
 
     stage('Deliver') {
       steps {
